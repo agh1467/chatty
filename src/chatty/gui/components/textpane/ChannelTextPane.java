@@ -1847,7 +1847,7 @@ public class ChannelTextPane extends JTextPane implements LinkListener, Emoticon
             } else if (action) {
                 print("* " + userName, style);
             } else {
-                print(userName, style);
+                print(String.format("%20s", userName), style);
             }
         }
         
